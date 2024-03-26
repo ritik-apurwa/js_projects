@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Your Local Time</title>
+  <link rel="stylesheet" href="../../index.css">
+</head>
+
+<body>
+
+
+  <header id="header">
+    <div id="logo">HopeProject</div>
+    <ul id="nav_links" class="flex flex-row gap-x-4 text-base md:text-lg">
+      <a href="../../index.html">Home</a>
+      <a href="https://github.com/ritik-apurwa">Github</a>
+    </ul>
+    <ul>
+      <button>open</button>
+    </ul>
+  </header>
+
+
+  <section class="h-[80vh] flex flex-col container">
+
+    <div id="clock_wrapper" class="h-1/2 flex w-full justify-center py-10">
+      <div id="clock" class="border-solid   border-[2px] relative w-60 h-60 rounded-[50%]">
+        <span id="clock_hour" class=" absolute w-[2px] h-28 bg-red-400 "></span>
+        <span id="clock_minute" class=" absolute w-[2px] h-28 bg-red-400 "></span>
+        <span id="clock_seconds" class=" absolute w-[2px] h-28 bg-red-400 "></span>
+      </div>
+    </div>
+
+
+    <div id="digital_time_wrapper" class=" h-auto dark:bg-dark-1 bg-white text-black dark:text-white  w-full grid lg:grid-cols-2 ">
+
+      <div id="digital_date" class=" flex h-20 items-center text-2xl justify-center gap-x-4 flex-row">
+        <h1>Date</h1>
+        <div id="year" class=""></div>:
+        <div id="month" class=" "></div>:
+        <div id="date" class=""></div>
+      </div>
+
+
+
+      <div id="digital_time" class="flex flex-row text-2xl items-center gap-x-4 h-20 justify-center">
+        <h1>Time</h1>
+        <div id="hour" class="hours"></div>:
+        <div id="minute" class="minutes"></div>:
+        <div id="second" class="seconds"></div>
+      </div>
+    </div>
+  </section>
+  <script src="chaiaurcode.js"></script>
+</body>
+
+</html>

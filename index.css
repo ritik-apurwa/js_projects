@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ ;
+}
+
+body{
+  @apply container w-screen mx-auto text-black dark:text-white max-w-screen-2xl bg-white dark:bg-dark-1
+}
+
+/* main Page  */
+
+#header {
+  @apply h-16 w-full dark:text-white text-black sticky top-0 z-20 bg-white dark:bg-dark-1 shadow-gray-800 shadow-md justify-between flex flex-row items-center px-4; 
+}
+
+#logo{
+  
+}
+
+
+
+#main #links_container{
+  @apply grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4  w-full h-auto;
+}
+#main #links_container #link_container{
+  @apply flex flex-col w-full items-center justify-between pt-10 ; 
+}
+#main #links_container #link_container #img_wrapper{
+  @apply flex size-28 md:size-32 xl:size-36 transition-all duration-200  justify-center ;
+}
+
+#main #links_container #link_container #img_wrapper img{
+@apply object-cover flex justify-center p-2
+}
+#main #links_container #link_container #name_and_link{
+@apply flex flex-col justify-center items-center; 
+}
+#main #links_container #link_container #name_and_link #link_span{
+@apply flex w-full justify-center items-center text-sm py-1 capitalize font-semibold; 
+}
+#main #links_container #link_container #name_and_link #link_button{
+@apply w-full rounded-md py-1 flex justify-center capitalize mt-2 bg-primary-1 ;
+}
+
+
+#images_box{
+  @apply container flex flex-col box-border;
+}
+
+#images {
+  @apply grid grid-cols-2 gap-8 px-10 py-10  md:grid-cols-3 xl:grid-cols-6;
+
+}
+
+.list-item {
+  @apply flex w-full bg-gray-600  flex-col   ; 
+}
+
+.list-item img {
+  @apply w-full  h-auto py-4 px-10 rounded-t-xl ;
+} 
+
+.list-item #img-span {
+  @apply text-xl w-full flex
+   rounded-b-xl border-t-black
+    text-black  border-t-2 items-center 
+    justify-center capitalize font-bold bg-slate-300 h-12;
+}
+
+
+.primary_button {
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  @apply rounded-lg border-solid w-full  border-transparent px-4 py-1 ; 
+}
+
+/*  color chager Page  */
+
+.color_button {
+  @apply inline-block px-4 py-2 text-white bg-purple-500 rounded-md shadow-md hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50;
+}
+
+/* clock  */
+
+
+
+.clock{
+  background-color: black;
+}
+
+
+#clock span{
+  transform-origin: bottom center;
+  left: calc(50% - 1px);
+  bottom: 50%;
+}
+
+
+
+
+
+
+/* Define a custom class with text shadow effect */
+

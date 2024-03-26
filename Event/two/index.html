@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">HopeProject</div>
+
+    <ul id="nav_links" class="flex flex-row gap-x-4 text-base md:text-lg">
+      <a href="../../index.html">Home</a>
+      <a href="../../Event/two/index.html">timeOut</a>
+      <a href="https://github.com/ritik-apurwa">Github</a>
+    </ul>
+
+    <ul>
+      <button>open</button>
+    </ul>
+  </header>
+
+
+  <div id="color_changing_box" class="h-auto py-6 gap-y-8 w-full items-center justify-center flex flex-col">
+    <div id="color_box" class="h-[40vh] p-10 flex-row   border-teal-200 border-2 flex items-end w-11/12">
+        <span class="flex flex-col w-1/2 justif items-center">
+          <span class="text-gray-200 z-50">i can change color autmatically click</span> <span class="text-green-300 z-50">Start Button </span> 
+        </span>
+        <span class="flex flex-col w-1/2 justif items-center">
+          <span class="text-gray-200 flex justify-end z-50 ">if you want to stop me click </span> <span class="text-red-300 z-50">Stop Button </span> 
+        </span>
+    </div>
+    <div id="button_box" class="h-auto w-full flex justify-center">
+
+      <button id="play_button" class="py-2 px-4 bg-green-300 mx-3 rounded-md text-black capitalize">
+        start color change
+      </button>
+      
+      <button id="end_button" class="py-2 px-4 bg-red-300 mx-3 rounded-md text-black capitalize">
+        stop color change
+      </button>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>

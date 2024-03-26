@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="../../index.css">
+</head>
+
+<body>
+  <header id="header">
+    <div id="logo">HopeProject</div>
+    <ul id="nav_links" class="flex flex-row gap-x-4 text-base md:text-lg">
+      <a href="../../index.html">Home</a>
+      <a href="https://github.com/ritik-apurwa">Github</a>
+    </ul>
+    <ul>
+      <button>open</button>
+    </ul>
+  </header>
+
+  <div id="wrapper" class="flex flex-col w-full h-full items-center justify-center">
+    <h1 class="flex w-full justify-center text-2xl py-4 capitalize">Number Guessing Game</h1>
+    <p>Try and guess a random number between 1 and 100.</p>
+    <p>You have 10 attempts to guess the right number.</p>
+    <br>
+
+    <form id="form" class="w-full h-full justify-center flex-col items-center gap-y-4 flex ">
+
+      <label for="guessField" id="guess">
+        Guess a number
+      </label>
+        
+      <input id="guessField" type="text" class="rounded-md text-black container w-40 py-2 px-4">
+
+      <input id="subt" type="button" value="Submit guess" class="rounded-md bg-white text-black py-2 px-4">
+
+
+    </form>
+
+    <div id="resultParas" class="flex flex-col items-center pt-4 gap-y-2 w-full justify-center">
+      <p>Previous Guesses:
+        <span id="guesses"></span>
+      </p>
+      <p>Guesses Remaining:
+        <span id="lastResult">10</span>
+      </p>
+      <p id="low_or_high"></p>
+
+
+      <button id="newGameBtn" class=" bg-white py-2 px-4 text-black rounded-md shadow-lg shadow-inherit" >Start New Game</button>
+    </div>
+  </div>
+  <script src="chaiaurcode.js"></script>
+</body>
+
+</html>
